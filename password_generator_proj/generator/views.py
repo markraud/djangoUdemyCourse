@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse('Hello there friend!')
+    return render(request, 'generator/home.html', {'testDictionary':'testDictInfo'})
 
 def example(request):
     return HttpResponse('This is the new example page!')
